@@ -23,6 +23,7 @@ ruff = "^0.0.284"
 pytest = "^7.4.0"
 pre-commit = "^3.3.3"
 nbqa = "^1.7.0"
+nbstripout = "^0.6.1"
 
 [build-system]
 requires = ["poetry-core"]
