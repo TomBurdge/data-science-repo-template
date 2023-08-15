@@ -29,8 +29,3 @@ repos:
         entry: poetry run ruff . --fix
         language: system
         types: [python]
-      - id: nbqa
-        name: ruff
-        entry: poetry run nbqa . --fix
-        language: system
-        types: [python]
