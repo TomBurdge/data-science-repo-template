@@ -14,4 +14,6 @@ https://python-poetry.org/docs/ (do not ignore the step on adding poetry to your
 The make file creates a local directory which will not be committed to git.
 You can use this directory for secrets and playgrounds that you will never commit.
 
+The directory structure is just a suggestion and you are welcome to reformat the directories as suits your needs.
+
 If you haven't already, add the Ruff extension to your vscode: https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
