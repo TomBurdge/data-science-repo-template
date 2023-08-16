@@ -16,7 +16,9 @@ install: ${LOCAL_PYTHON}
 	@echo "Installing dependencies..."
 	poetry install --no-root --sync
 
-#currently - this doesn't work with the setup file - seems to not activate the environment properly
+make_local:
+	if [ ! -d local/ ]; then mkdir -p local/; fi
+
 pre-commit: ${LOCAL_PYTHON} ${LOCAL_PRE_COMMIT}
 	@echo "Setting up pre-commit..."
 	@if [ -f ${LOCAL_PRE_COMMIT} ]; then \
@@ -29,8 +31,7 @@ pre-commit: ${LOCAL_PYTHON} ${LOCAL_PRE_COMMIT}
 	fi
 	./.venv/bin/pre-commit autoupdate
 
-make_local:
-	if [ ! -d local/ ]; then mkdir -p local/; fi
+
 
 clean:
 	rm -rf .git/hooks
