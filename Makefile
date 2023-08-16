@@ -2,7 +2,7 @@ GLOBAL_PYTHON = $(shell which python3)
 LOCAL_PYTHON = ./.venv/bin/python
 LOCAL_PRE_COMMIT = ./.venv/lib/python*/site-packages/pre_commit
 
-setup: venv install
+setup: venv install make_local
 
 venv: $(GLOBAL_PYTHON)
 	@echo "Creating .venv..."
@@ -28,6 +28,9 @@ pre-commit: ${LOCAL_PYTHON} ${LOCAL_PRE_COMMIT}
 		./.venv/bin/pre-commit install; \
 	fi
 	./.venv/bin/pre-commit autoupdate
+
+make_local:
+	if [ ! -d local/ ]; then mkdir -p local/; fi
 
 clean:
 	rm -rf .git/hooks
