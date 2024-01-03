@@ -7,8 +7,8 @@ For more details, read the Medium [article](https://medium.com/@drgabrielharris/
 Make sure you have WSL set up, pyenv installed and setup, and poetry installed.
 
 The pyenv setup guide is decent; I plan to share my own. 
-The poetry setup guide is quite good.
 
+The poetry setup guide is quite good:
 https://python-poetry.org/docs/ (do not ignore the step on adding poetry to your path.)
 
 * Go to the repository on github.
