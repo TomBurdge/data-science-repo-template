@@ -1,0 +1,37 @@
+{
+  "editor.rulers": [
+      108
+  ],
+  "python.formatting.provider": "none",
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+      "--max-line-length=108",
+      "--extend-ignore=E203,E501,W503",
+      "--exclude=.venv"
+  ],
+  "python.sortImports.args": [
+      "--profile=black"
+  ],
+  "[python]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+      },
+      "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
+  "explorer.confirmDelete": false,
+  "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "gitlens.gitCommands.skipConfirmations": [
+      "fetch:command",
+      "switch:command",
+      "stash-push:command"
+  ],
+  //"terminal.integrated.fontFamily": "monaco",
+  //"editor.inlayHints.fontFamily": "monaco",
+  //"editor.codeLensFontFamily": "monaco"
+}
