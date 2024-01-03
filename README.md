@@ -1,10 +1,9 @@
 # How to use this data science repository template
 Make sure you have WSL set up, pyenv installed and setup, and poetry installed.
-For guides on how to do these, see:
-https://www.notion.so/wessexinsights/Setup-pyenv-2cded7fc76fa42cd9734b17751152ed7
+The pyenv setup guide is decent, I plan to share my own, and the one for poetry is good.
 https://python-poetry.org/docs/ (do not ignore the step on adding poetry to your path.)
 
-* Go to the repository on gitea.
+* Go to the repository on github.
 * select the button "Use this template" and create a new repository.
 * Git clone the new repository onto your local machine with WSL.
 * Use the Makefile to create your virtual environment. Run in terminal: make setup
