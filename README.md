@@ -1,3 +1,8 @@
+This repository is a fork of Gabriel Harris' data science repo template.
+
+For more details, read the Medium [article](https://medium.com/@drgabrielharris/python-how-using-poetry-make-and-pre-commit-hooks-to-setup-a-repo-template-for-your-ds-team-15b5a77d0e0f)
+
+
 # How to use this data science repository template
 Make sure you have WSL set up, pyenv installed and setup, and poetry installed.
 The pyenv setup guide is decent, I plan to share my own, and the one for poetry is good.
