@@ -2,7 +2,7 @@ GLOBAL_PYTHON = $(shell which python3)
 LOCAL_PYTHON = ./.venv/bin/python
 LOCAL_PRE_COMMIT = ./.venv/lib/python*/site-packages/pre_commit
 
-setup: venv install make_local
+setup: venv upgrade_pip install make_local
 
 venv: $(GLOBAL_PYTHON)
 	@echo "Creating .venv..."
@@ -11,6 +11,9 @@ venv: $(GLOBAL_PYTHON)
 	@echo "Run 'deactivate' command to exit virtual environment."
 	@echo "For more info, see https://docs.python.org/3/library/venv.html."
 	. ./.venv/bin/activate
+
+upgrade_pip: ${LOCAL_PYTHON}
+	python -m pip install --upgrade pip
 
 install: ${LOCAL_PYTHON}
 	@echo "Installing dependencies..."
